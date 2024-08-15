@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Welcome To Our Resturant</h2>
+    </header>
+
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="images/logo.png" alt="" />
+      </div>
+
+      <div class="hamburger-menu">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+
+      <div class="menu-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="food-items">
+        <p>Please Choose Yours Food Items</p>
+        <hr />
+        <span>
+          <!-- <img src="img/Burger.img.jpg" alt=""> -->
+          <input type="checkbox" id="burger" name="burger" value="burger" />
+          <label for="burger">Burger <span class="food-icons">🍔</span></label>
+        </span>
+        <span>
+          <!-- <img src="img/fries.img.jpg" alt=""> -->
+          <input type="checkbox" id="fries" name="fries" value="fries" />
+          <label for="fries">Fries <span class="food-icon">🍟</span></label>
+        </span>
+        <span>
+          <!-- <img src="img/Drinks.img.jpg" alt=""> -->
+          <input type="checkbox" id="drinks" name="drinks" value="drinks" />
+          <label for="drinks">Drinks<span class="food-icon">🍹</span></label>
+        </span>
+
+        <div id="btn">
+          <button>Order Now</button>
+        </div>
+      </div>
+
+      <div class="order_image">
+        <span id="number"></span>
+        <p class="inform"></p>
+        <div id="imageContainer">
+        </div>
+        <div class="order-number">
+          <p id="message"></p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
